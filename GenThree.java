@@ -5,26 +5,21 @@
         public class GenThree {
 	public static void main(String[] args) {
 	int min, max, range;
-        double a, b, c;
-        int x, y, z;
         min = Integer.parseInt(args[0]);
         max = Integer.parseInt(args[1]);
         range = max - min;
        
-        a = ((range + 1) * Math.random() + min);
-         x = (int) a;
-        System.out.println(x);
+        int a = ((int) range * Math.random() + min);
+        System.out.println(a);
        
-        b = ((range + 1) * Math.random() + min);
-         y = (int) b;
-        System.out.println(y);
+        int b = ((int) range * Math.random() + min);
+        System.out.println(b);
        
-        c = ((range + 1) * Math.random() + min);
-         z = (int) c;
-        System.out.println(z);
+        int c = ((int) range * Math.random() + min);
+        System.out.println(c);
 
-       int i = Integer.min(x,y);
-       int j = Integer.min(i,z);
+       int i = Integer.min(a,b);
+       int j = Integer.min(c,i);
        System.out.println("The minimal generated number was " + j);
    }
 }
