@@ -9,13 +9,13 @@
         max = Integer.parseInt(args[1]);
         range = max - min;
        
-        int a = ((int) range * Math.random() + min);
+        int a = (int)(range * Math.random() + min);
         System.out.println(a);
        
-        int b = ((int) range * Math.random() + min);
+        int b = (int)(range * Math.random() + min);
         System.out.println(b);
        
-        int c = ((int) range * Math.random() + min);
+        int c = (int)(range * Math.random() + min);
         System.out.println(c);
 
        int i = Integer.min(a,b);
