@@ -23,12 +23,8 @@ public class GenThree {
          z = (int) c;
         System.out.println(z);
 
-        if ((x<y&&x<z)|| (x==y&&x<z) || (x==z&&x<y)) {
-            System.out.println("The minimal generated number was " + x);
-        } else if ((y<x&&y<z)|| (y==x&&y<z) || (y==z&&y<x)) {
-            System.out.println("The minimal generated number was " + y);
-        }  else {
-            System.out.println("The minimal generated number was " + z);
-        }	
+       int i = Integer.min(x,y);
+       int j = Integer.min(i,z);
+       System.out.println("The minimal generated number was " + j);
    }
 }
