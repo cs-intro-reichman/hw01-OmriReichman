@@ -4,22 +4,22 @@
  */
         public class GenThree {
 	public static void main(String[] args) {
-	int min, max, difference;
+	int min, max, range;
         double a, b, c;
         int x, y, z;
         min = Integer.parseInt(args[0]);
         max = Integer.parseInt(args[1]);
-        difference = max - min;
+        range = max - min;
        
-        a = ((difference+1) * Math.random() + min);
+        a = ((range + 1) * Math.random() + min);
          x = (int) a;
         System.out.println(x);
        
-        b = ((difference + 1) * Math.random() + min);
+        b = ((range + 1) * Math.random() + min);
          y = (int) b;
         System.out.println(y);
        
-        c = ((difference + 1) * Math.random() + min);
+        c = ((range + 1) * Math.random() + min);
          z = (int) c;
         System.out.println(z);
 
